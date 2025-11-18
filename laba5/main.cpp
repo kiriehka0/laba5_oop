@@ -3,10 +3,11 @@
 #include "dynamic_array.h"
 
 int main() {
+    // создаём экземпляр memory_resource
     BlockMemoryResource block_mr;
-    
     std::cout << "=== Демонстрация с простыми типами (int) ===" << std::endl;
     {
+        // заполняем массив
         DynamicArray<int> int_array(0, &block_mr);
         for (int i = 0; i < 10; ++i) {
             int_array.push_back(i * i);
@@ -21,9 +22,9 @@ int main() {
         std::cout << "Размер: " << int_array.size() 
                   << ", Емкость: " << int_array.capacity() << std::endl;
     }
-    
     std::cout << "\n=== Демонстрация со сложными типами ===" << std::endl;
     {
+        // создаём массив и добавляем три объекта
         DynamicArray<ComplexType> complex_array(0, &block_mr);
         complex_array.push_back(ComplexType(1, 3.14, "Pi"));
         complex_array.push_back(ComplexType(2, 2.71, "Euler"));
@@ -32,18 +33,14 @@ int main() {
         for (auto it = complex_array.begin(); it != complex_array.end(); ++it) {
             std::cout << "  " << *it << std::endl;
         }
-
         complex_array[0].value = 3.14159;
         complex_array.push_back(ComplexType(4, 0.0, "Zero"));
-        
         std::cout << "\nПосле модификации:" << std::endl;
         for (const auto& item : complex_array) {
             std::cout << "  " << item << std::endl;
         }
-        
         std::cout << "Размер: " << complex_array.size() 
                   << ", Емкость: " << complex_array.capacity() << std::endl;
     }
-    
     return 0;
 }
