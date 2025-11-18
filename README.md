@@ -6,7 +6,8 @@
 **Дисциплина**: ООП  
 ## Лабораторная работа №5: 
 **Вариант**: 11  
-**Задание**: 
+**Задание**:   Контейнер - динамический массив
 
 
-<img width="927" height="358" alt="изображение" src="https://github.com/user-attachments/assets/b7e0d5fe-4de6-4889-b422-8e37e22c7d3a" />
+<img width="927" height="358" alt="изображение" src="https://github.com/user-attachments/assets/b7e0d5fe-4de6-4889-b422-8e37e22c7d3a" />  
+<img width="816" height="59" alt="изображение" src="https://github.com/user-attachments/assets/bf5858e8-7cb9-449d-91e4-3f5da095b23e" />
