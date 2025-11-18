@@ -7,4 +7,6 @@
 ## Лабораторная работа №5: 
 **Вариант**: 11  
 **Задание**: 
+
+
 <img width="927" height="358" alt="изображение" src="https://github.com/user-attachments/assets/b7e0d5fe-4de6-4889-b422-8e37e22c7d3a" />
